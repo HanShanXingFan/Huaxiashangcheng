@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.head{
+	width: 100%;
+	height: 1.1rem;
+	position: relative;
+
+}
+.head>img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.head>.head_house,.head>.head_choice,.head>.head_img{
+	position: absolute;
+	display: block;
+}
+.head>.head_house{
+	top:0.18rem;
+	left: 0.21rem;
+	width: 0.4rem;
+	height: 0.33rem;
+}
+.head>.head_choice{
+	top:0.26rem;
+	left: 2.85rem;
+	width: 0.7rem;
+	height: 0.24rem;
+}
+.head>.head_img{
+	top:0.15rem;
+	right: 0.29rem;
+	width: 0.41rem;
+	height: 0.37rem;
+}
+.head>p{
+	border-top: 0.01rem solid #dedede;
+	position: absolute;
+	top:0.61rem;
+	width: 100%;
+}
+.head>.nav{
+	/*overflow: hidden;*/
+	position: absolute;
+	left: 0.73rem;
+	top: 0.78rem;
+}
+.head>.nav>.nav_list{
+	list-style: none;
+	font-size: 0.2rem;
+	overflow: hidden;
+
+}
+.head>.nav>.nav_list>li{
+	float: left;
+	margin-left: 1.3rem;
+}
+.head>.nav>.nav_list>li:nth-of-type(1){
+	margin-left: 0;
+}
+.nav_active{
+	position: absolute;
+	top:0.3rem;
+	width:0.8rem;
+	height:0.01rem;
+	border-bottom: 1px solid #0f91dd;
+	transform: translate3d(0,0,0);
+	transition: all 0.4s ease-in-out;
+}
+.search{
+	background:#ebebeb;
+	width: 100%;
+	height: 0.81rem;
+	position: relative; 
+}
+.search>.search_con{
+	width: 5.98rem;
+	height: 0.58rem;
+	position: absolute;
+	top:0.11rem;
+	left: 0.2rem;
+	background: #fff;
+	border-radius: 0.1rem;
+}
+.search_con>input{
+	width: 89%;
+	height: 100%;
+	border:none;
+	margin-left: 0.05rem;
+	float:left;
+	font-size: 0.18rem;
+	color: #ebebeb;
+}
+.search_con>a{
+	display: block;
+	width:0.27rem;
+	height: 0.28rem;
+	float: left;
+	border-left: 0.02rem solid #ccc;
+	padding-left: 0.18rem;
+	margin-top:0.15rem;
+}
+.search_con>a>img{
+	width: 0.27rem;
+	height: 0.28rem;
+	display: block;
+}
+.swiper-container {
+    width:100%;
+    height:2.77rem;
+}
+.swiper-slide>img{
+	width: 100%;
+	height: 100%;
+	/*display: block;*/
+}  
+.message{
+	margin:0.11rem 0.2rem;
+	overflow: hidden;
+}
+.message>.aa{
+	color: #000000;
+	font-size: 0.22rem;
+	font-weight: bold;
+	line-height: 0.31rem
+}
+.message>p{
+	color: #000000;
+	font-size: 0.22rem;
+	line-height: 0.31rem
+}
+.message>.cc{
+	color: #747474;
+	font-size: 0.14rem;
+}
+.message>button{
+	display:block;
+	float: left;
+	width: 2.9rem;
+	height: 0.4rem;
+	font-size: 0.16rem;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 0.05rem;
+	margin:0.1rem 0.09rem 0.05rem 0.01rem;
+}
+.message>.b1{
+	background: #fc8026;
+}
+.message>.b2{
+	background: #108cde;
+}
+.line{
+	border-top:0.01rem solid #ccc;
+}
+.zhong{
+	background: #ccc;
+	height: 0.11rem;
+	margin-top: 0.01rem;
+}
+.footer{
+	width: 100%;
+	background: #ebebeb;
+    border-top:0.01rem solid transparent;
+}
+.footer>.btn_more{
+	display: block;
+	margin:0.1rem auto 0.3rem;
+	font-size: 0.14rem;
+	background: #fff;
+	height: 0.41rem;
+	line-height: 0.41rem;
+    width: 93%;
+    border-radius: 0.05rem;
+
+}
+.footer>p{
+	text-align: center;
+	font-size: 0.18rem;
+	color: #000;
+	line-height: 0.31rem;
+}
+.footer>ul{
+	list-style: none;
+	overflow: hidden;
+	margin-left: 1.78rem;
+}
+.footer>ul>.tiao{
+	width: 0.01rem;
+	height: 0.18rem;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+	background: #CCC;
+	margin-top:0.11rem;
+}
+.footer>ul>li{
+	float: left;
+	font-size: 0.18rem;
+	color: #969696;
+	line-height: 0.31rem;
+}

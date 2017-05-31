@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<style>
+		.wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			font-size: 32px;
+			text-align: center;
+		}
+		.swiper-container {
+			width: 100%;
+			height: 50%;
+		}
+		.nav {
+			height: 100px;
+			line-height: 100px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.nav_list {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			list-style: none;
+		}
+		.nav_list>li {
+			flex: 1;
+			height: 100%;
+		}
+		.nav .nav_active {
+			position: absolute;
+			bottom:-20px;
+			left:150px;
+			height: 1px;
+			width: 10%;
+			transform: translate3d(0,0,0);
+			border-bottom: 1px solid #007AFF;
+			box-sizing: border-box;
+			transition: all 0.4s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrap">
+			<div class="nav">
+				<ul class="nav_list">
+					<li>综合排序</li>
+					<li>更新时间</li>
+					<li>条件筛选</li>
+			
+				</ul>
+				<div class="nav_active"></div>
+			</div>
+			<div class="content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		var textSwiper = new Swiper('.content .swiper-container', {
+			speed:1000,
+			onSlideChangeStart:function (swiper,event) {
+					$(".nav_active").css({
+						transform: "translate3d(" + 330 * swiper.activeIndex + "%,0,0)",
+					})
+                }
+		});
+		$('.nav_list>li').on('click',function () {
+			moveNav($(this).index());
+		});
+		function moveNav(index) {
+			textSwiper.slideTo(index);
+		}
+	</script>
+</body>
+</html>

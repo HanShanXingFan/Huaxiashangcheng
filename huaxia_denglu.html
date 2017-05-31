@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<title>华夏商盟</title>
+	<link rel="stylesheet" href="css/huaxia.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<p class="head">
+		<img src="img/11.png" alt="">
+		<img class="logo" src="img/12.png" alt="">
+		<img class="logo_s" src="img/13.png" alt="">
+	</p>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+    	 <div class="swiper-slide"><img src="img/14.png" alt="图片"></div>
+        <div class="swiper-slide"><img src="img/14.png" alt="图片"></div>
+        <div class="swiper-slide"><img src="img/14.png" alt="图片"></div>		
+    </div>  
+</div>
+<div class="physical">
+		<p>
+			<img src="img/15.png" alt="">
+		</p>
+	<div class="physical_m">
+		<img src="img/16.png" alt="">
+	</div>
+	<div class="foot">
+		<img src="img/17.png" alt="">
+	</div>
+</div>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script>
+		(function (doc, win) {
+		
+        var docEle = doc.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        var recalCulate = function () {
+            var width = docEle.clientWidth;
+            docEle.style.fontSize = 100 * (width / 640) + 'px';
+        };
+
+        recalCulate();
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, recalCulate, false);
+    })(document, window);
+
+        var mySwiper = new Swiper ('.swiper-container', {
+// direction: 'vertical',
+		loop: true,
+		autoplay : 5000,
+	});
+	</script>
+</body>
+</html>
